@@ -536,7 +536,8 @@ END CPE_SCHEDULAR_FO;
             ELSE
                 VV_MISMATCH_FLAG := 'Y';
             END IF;
-
+            ------this condition needs modification
+	    -------for back period cases postings
             UPDATE CPE_YTB_ECD_BP
                 SET
                     TRRNO_ECD = VV_TRRNO_ECD,
